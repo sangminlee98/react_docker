@@ -1,10 +1,21 @@
+# version: "3"
+
+# services:
+#   frontent:
+#     build:
+#       context: ./
+#     command: ["serve", "-s", "build"]
+#     ports:
+#       - 3000:3000
+#     tty: true
+
 version: "3"
 
 services:
   frontent:
     build:
       context: ./
-    command: ["serve", "-s", "build"]
+    command: ["yarn", "start"]
     ports:
       - 3000:3000
     tty: true
